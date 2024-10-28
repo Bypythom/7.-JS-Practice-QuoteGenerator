@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+h1{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23,124,229);
+    margin: 10px auto 0; 
+}
+
+blockquote {
+    font-size: 26px;
+    min-height: 110px;
+}
+blockquote::before, blockquote::after{
+    content: '"';
+}
+
+span {
+    margin-top: 10px;
+    margin-left: auto; 
+    position: relative;
+}
+
+span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+}
+
+.container-button {
+    width: 100%;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+}
+button {
+    background: rgb(23,124,229);
+    color: white;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 125px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    cursor: pointer;
+    margin-inline-start: 1px;
+}
+img {
+    width: 30px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+button:nth-child(2){
+    background: transparent;
+    color: #333;
+}
+
